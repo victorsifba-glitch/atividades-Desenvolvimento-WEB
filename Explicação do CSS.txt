@@ -1,0 +1,25 @@
+CSS (ou Style) é a parte que estiliza a página.
+
+Enquanto o HTML cuida da estrutura (textos, imagens, botões, caixas), o CSS cuida da aparência: cores, tamanhos, fontes, espaçamentos, efeitos, animações, etc.
+
+Onde aplicar estilos (efeitos pessoais):
+
+1. Inline (direto na tag)  
+   Você coloca o estilo dentro da própria tag do HTML.  
+
+2. Na seção <head> da página (estilo interno) 
+   Você cria um bloco de estilos que vale para toda aquela página.  
+
+3. Arquivo externo (.css)  
+   Você cria um arquivo separado (ex: estilo.css) e liga ele ao HTML.
+
+O que pode ser controlado com CSS:
+
+1. Cores de fundo, textos e bordas;
+2. Fontes e tamanhos de letra;
+3. Espaçamentos (margens e preenchimentos);
+4. Largura e altura dos elementos;
+5. Posicionamento (centralizar, alinhar, etc.);
+6. Efeitos visuais (sombra, bordas arredondadas, transparência);
+7. Animações e transições (coisas que se movem ao passar o mouse);
+8. Layout responsivo (como a página fica no celular);
