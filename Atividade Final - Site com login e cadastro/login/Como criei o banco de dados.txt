@@ -1,0 +1,19 @@
+Aplicativo usado: XAMPP
+
+(https://sourceforge.net/projects/xampp/)
+
+Opções rodando: Apache e Mysql
+
+No phpMyAdmin, abra a aba/opção SQL e execute:
+
+CREATE DATABASE sistema_login
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+Depois selecione o banco sistema_login e, para criar a tabela de usuários, executar:
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
