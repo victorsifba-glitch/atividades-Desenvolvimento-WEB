@@ -1,19 +1,20 @@
-Aplicativo usado: XAMPP
+Aplicativo utilizado: XAMPP
+Download: https://sourceforge.net/projects/xampp/
 
-(https://sourceforge.net/projects/xampp/)
+No XAMPP, iniciei os serviços Apache e MySQL.
 
-Opções rodando: Apache e Mysql
-
-No phpMyAdmin, abra a aba/opção SQL e execute:
+Depois, acessei o phpMyAdmin pelo navegador. Na aba SQL, executei o seguinte comando para criar o banco de dados:
 
 CREATE DATABASE sistema_login
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-Depois selecione o banco sistema_login e, para criar a tabela de usuários, executar:
+Em seguida, selecionei o banco de dados sistema_login e, novamente pela aba SQL, executei o comando abaixo para criar a tabela usuarios:
 
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL
 );
+
+o banco ficou preparado para armazenar os usuários do sistema, utilizando um ID gerado automaticamente, um nome de usuário único e um campo para armazenar a senha.
