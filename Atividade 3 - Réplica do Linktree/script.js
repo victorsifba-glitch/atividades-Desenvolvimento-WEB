@@ -13,8 +13,8 @@ const redesSociais = [
 ];
 
 function renderizarLinks() {
-    const containerPrincipal = document.getElementById("main-links");
-    const containerRedes = document.getElementById("social-links");
+    const containerPrincipal = document.getElementById("links_principais");
+    const containerRedes = document.getElementById("redes_sociais");
 
     linksPrincipais.forEach(link => {
         const elementoA = document.createElement("a");
@@ -22,6 +22,7 @@ function renderizarLinks() {
         elementoA.textContent = link.label;
         elementoA.target = "_blank";
         elementoA.rel = "noopener noreferrer";
+
         containerPrincipal.appendChild(elementoA);
     });
 
@@ -40,5 +41,4 @@ function renderizarLinks() {
     });
 }
 
-// Executa a função assim que a estrutura da página (DOM) estiver totalmente carregada
 window.addEventListener("DOMContentLoaded", renderizarLinks);
